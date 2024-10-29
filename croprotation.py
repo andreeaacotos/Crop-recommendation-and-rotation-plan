@@ -184,9 +184,6 @@ with col3:
                 st.image(crop_images.get(crop, 'images/default.jpg'), width=300, caption=crop)
 
     if 'crop_rotation_result' in st.session_state:
-        st.markdown("<h1 style='text-align: center;  padding: 80px; color: #2E8B57; font-family: Arial, sans-serif; '>Best Crop Rotation Plan:</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='text-align: center;  padding-top: 60px; padding-bottom: 40px; color: #2E8B57; font-family: Arial, sans-serif; '>Best Crop Rotation Plan:</h1>", unsafe_allow_html=True)
         st.dataframe(st.session_state['crop_rotation_result'],  width=600)
 
-
-# color: #2E8B57; green    #2c39b1-Omdena col
-#blue hover button #3C39A2
