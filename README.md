@@ -1,7 +1,7 @@
 # Optimizing Crop Rotation for Small-scale Farmers in Rwanda
 ![image](https://github.com/user-attachments/assets/873cd3e5-af9a-4b9b-a288-3b3a19cb2d20)
 
-[Check the STREAMLIT APP]("https://crop-recommendation-and-rotation-plan.streamlit.app/")
+[Check the STREAMLIT APP](https://crop-recommendation-and-rotation-plan.streamlit.app/)
 
 ## Overview
 This project focuses on developing an optimized crop rotation system for small-scale farmers in Rwanda, using a combination of data-driven analysis and machine learning models to make informed crop recommendations an finaly to create a crop rotation plan. This approach is intended to improve soil health, increase crop yield, and support sustainable agricultural practices.
