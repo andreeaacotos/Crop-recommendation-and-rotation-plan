@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib
+import pickle
 import random
 import streamlit.components.v1 as components
 from deap import base, creator, tools, algorithms
@@ -9,9 +9,13 @@ from deap import base, creator, tools, algorithms
 # page config
 st.set_page_config(page_title="Crop Rotation Planner", page_icon="🌿", layout='wide', initial_sidebar_state="expanded")
 
-# pre-trained model and LabelEncoder
-rf_classifier = joblib.load('random_forest.pkl')
-label_encoder = joblib.load('label_encoder.pkl')
+# pre-trained model
+with open('random_forest.pkl', 'rb') as file:
+    rf_classifier = pickle.load(file)
+
+# LabelEncoder
+with open('label_encoder.pkl', 'rb') as file:
+    label_encoder = pickle.load(file)
 
 # dataset
 data = pd.read_csv('soil.impact.csv')
@@ -103,7 +107,7 @@ with header_col2:
     st.title('Optimizing Crop Rotation for Small-scale Farmers in Rwanda')
 
 # layout for inputs and controls
-col1, col2, col3 = st.columns([2.8, 0.5, 6])
+col1, col2, col3 = st.columns([2.7, 0.5, 6])
 with col1:
     st.header("Crop Recommendation System")
 
