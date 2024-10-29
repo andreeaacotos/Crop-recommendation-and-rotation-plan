@@ -1,0 +1,5 @@
+deap==1.4.1
+joblib==1.2.0
+numpy==1.26.4
+pandas==2.2.2
+streamlit==1.37.1
