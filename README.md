@@ -49,10 +49,10 @@ The dataset `soil.impact.csv` provides information on various crops along with t
 
 5. **Genetic Algorithm for Crop Rotation Optimization**  
    - Implements a genetic algorithm to generate and evolve crop rotation plans.  
-   - The algorithm optimizes rotations for 3-5 years, balancing crop yields, and soil health. With data reffering market it can jbe added profitability as a feature to (also) maximize.
+   - The algorithm optimizes rotations for 2-5 years, balancing crop yields, and soil health. With market data it can be added profitability as a feature to (also) maximize.
    - Evaluates solutions based on constraints like nutrient cycling and environmental sustainability.
 
 
 ### Streamlit App 
  - Crop recommendation- user input: environmental and soil features.
- - Crop rotation with Genetic Algorithms for 2-5 year, 1-4 crops to grow and soil type.
+ - Crop rotation with Genetic Algorithms for 2-5 years, 1-4 crops to grow and soil type.
